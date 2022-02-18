@@ -18,7 +18,7 @@ class CreateShortLinksTable extends Migration
             $table->string('code');
             $table->string('link');
             $table->string('name')->nullable();
-            $table->string('visits');
+            $table->integer('visits')->nullable();
             $table->timestamps();
         });
     }
